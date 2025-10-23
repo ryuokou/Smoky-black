@@ -1468,7 +1468,6 @@ const ImageGallery = {
   // 📊 DATOS DE IMÁGENES PARA CADA PRODUCTO
   productImages: {
     'smoking-gala': [
-      'imagen/1001.jpg',
       'imagen/1002.jpg',
       'imagen/1003.jpg',
       'imagen/1004.jpg',
@@ -1720,4 +1719,5 @@ function moveCarousel(direction) {
   const cardWidth = track.querySelector('.product-card')?.offsetWidth || 320;
   const scrollAmount = cardWidth + 24; // 24px gap
   track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+
 }
