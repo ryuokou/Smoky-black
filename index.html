@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SMOKY BLACK - Elegancia Premium">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>SMOKY BLACK - Elegancia Premium</title>
+</head>
+<body>
+  <!-- 🎯 CONTENEDOR PRINCIPAL -->
+  <div id="app">
+    <!-- 🚀 PANTALLA DE CARGA -->
+    <div id="loading" class="loading-screen">
+      <div class="loading-content"> 
+        <h1>SMOKY BLACK</h1>
+        <p>Cargando elegancia premium...</p>
+        <div class="loading-bar">
+          <div class="loading-progress"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de imagen ampliada con descripción a la derecha -->
+  <div id="imageModal" class="image-modal">
+    <div class="modal-image-container" style="display: flex; flex-direction: row; gap: 2rem; align-items: flex-start;">
+      <img id="modalMainImage" class="modal-main-image" src="" alt="Imagen ampliada" style="max-width: 400px; border-radius: 15px;">
+      <div class="modal-description" id="modalDescriptionBox" style="display: flex; flex-direction: column; flex: 1; min-width: 250px;">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <span id="modalDescIcon" style="font-size: 2rem;"></span>
+          <span id="modalDescTitle" style="font-weight: bold; font-size: 1.2rem;"></span>
+        </div>
+        <div id="modalDescription" style="margin-top: 1rem;"></div>
+      </div>
+    </div>
+    <button onclick="document.getElementById('imageModal').classList.remove('active')" class="modal-close">✖</button>
+  </div>
+  <!-- Fin modal imagen ampliada -->
+
+  <!-- 🚀 JAVASCRIPT COMPLETO -->
+  <script src="app.js"></script>
+  <script src="dashboard-functions.js"></script>
+</body>
+</html>
